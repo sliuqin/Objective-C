@@ -11,7 +11,7 @@
 
 }
 - (void)run {
-    NSLog(@"NSArray Test");
+    NSLog(@"==================  NSArray Test ==================");
     [self test1];
     [self test2];
 }

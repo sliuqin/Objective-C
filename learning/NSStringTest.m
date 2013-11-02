@@ -11,7 +11,7 @@
 
 }
 - (void)run {
-    NSLog(@"NSString Test");
+    NSLog(@"==================  NSString Test ================== ");
     [self test1];
     [self test2];
 }
