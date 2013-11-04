@@ -22,7 +22,7 @@
     // 注意，最后一个值必须是nil；
     NSArray *arr = [NSArray arrayWithObjects:@"obj1", @"obj2", nil];
     NSLog(@"%@", arr);
-    NSLog(@"the array's count is ：%i", [arr count]);
+    NSLog(@"the array's count is ：%ld", [arr count]);
 
     // 快速遍历：
     for (NSString *item in arr) {
@@ -42,13 +42,14 @@
     }
 
     NSLog(@"The last object of array is %@", [arr lastObject]);
-    NSLog(@"The index of 'obj2' in array is %i", [arr indexOfObject:@"obj2"]);
+    NSLog(@"The index of 'obj2' in array is %ld", [arr indexOfObject:@"obj2"]);
 
 }
 
 - (void)test2 {
     // TODO: 访问一组元素
-    NSArray *arr = [NSArray arrayWithObjects:@"obj1", @"obj2", @"obj2", nil];
+    //NSArray *arr = [NSArray arrayWithObjects:@"obj1", @"obj2", @"obj2", nil];
+
 }
 
 @end

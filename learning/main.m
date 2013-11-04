@@ -11,9 +11,12 @@
 #import "NSArrayTest.h"
 #import "NSDictionaryTest.h"
 #import "NSSetTest.h"
+#import "ARCTest.h"
+#import "NSValueTest.h"
+#import "NSNumberTest.h"
+#import "Person.h"
 
-int main(int argc, const char * argv[])
-{
+int main(int argc, const char *argv[]) {
 
     @autoreleasepool {
         NSStringTest *stringTest = [[NSStringTest alloc] init];
@@ -27,6 +30,18 @@ int main(int argc, const char * argv[])
 
         NSSetTest *setTest = [[NSSetTest alloc] init];
         [setTest run];
+
+        ARCTest *arpTest = [[ARCTest alloc] init];
+        [arpTest run];
+
+        NSValueTest *valueTest = [[NSValueTest alloc] init];
+        [valueTest run];
+
+        NSNumberTest *numberTest= [[NSNumberTest alloc] init];
+        [numberTest run];
+
+        Person *person = [[Person alloc] init];
+        [person run];
     }
     return 0;
 }
